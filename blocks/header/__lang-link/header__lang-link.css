@@ -15,7 +15,7 @@
     opacity: 0.8;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 767px) and (min-width: 320px) {
     .header__lang-link {
         width: 22px;
         font-size: 18px;
