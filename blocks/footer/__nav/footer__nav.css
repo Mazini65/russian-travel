@@ -1,23 +1,11 @@
 .footer__nav {
-    display: flex;
-    flex-direction: row;
-    height: 18px;
+  display: flex;
+  flex-direction: row;
 }
 
-@media screen and (max-width: 767px) and (min-width: 320px) {
-    .footer__nav {
-        display: flex;
-        flex-direction: column;
-        row-gap: 32px;
-        height: 248px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .footer__nav {
-        display: flex;
-        flex-direction: column;
-        row-gap: 32px;
-        height: 248px;
-    }
+@media screen and (max-width: 767px) {
+  .footer__nav {
+    flex-direction: column;
+    row-gap: 32px;
+  }
 }

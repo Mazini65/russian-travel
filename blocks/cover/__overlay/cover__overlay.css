@@ -1,10 +1,53 @@
 .cover__overlay {
-    background-color: #2A2C2F;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("../../../images/cover/__background/cover__background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  position: relative;
+  text-decoration: none;
 }
 
-.cover__overlay:hover {
-    opacity: 0.8;
+.cover__overlay::before {
+  content: "";
+  background: #2a2c2f;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.3;
+  z-index: -1;
+  transition: opacity 03s ease;
+}
+
+.cover__overlay:hover::before {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1920px) {
+  .cover__overlay {
+    min-height: 740px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .cover__overlay {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cover__overlay {
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover__overlay {
+    min-height: 200px;
+  }
 }

@@ -1,53 +1,48 @@
-.cover {
-    display: grid;
-    z-index: 0;
+@media screen and (max-width: 1920px) {
+  .cover {
+    max-width: 1184px;
+    margin: 0 auto;
+  }
 }
 
-@media screen and (min-width: 1279px) {
-    .cover {
-        width: 1184px;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 1279px) and (min-width: 1023px) {
-    .cover {
-        width: 1024px;
-        margin: 0 auto;
-    }
+@media screen and (max-width: 1279px) {
+  .cover {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .cover {
-        width: 1024px;
-        margin: 0;
-    }
+  .cover {
+    max-width: 1024px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cover {
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .cover {
-        width: 768px;
-        margin: 0;
-    }
+  .cover {
+    max-width: 768px;
+    margin: 0;
+  }
 }
 
-@media screen and (max-width: 1023px) and (min-width: 767px) {
-    .cover {
-        width: 768px;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 767px) and (min-width: 320px) {
-    .cover {
-        width: 320px;
-        margin: 0 auto;
-    }
+@media screen and (max-width: 767px) {
+  .cover {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .cover {
-        width: 320px;
-        margin: 0;
-    }
+  .cover {
+    max-width: 320px;
+    margin: 0;
+  }
 }
