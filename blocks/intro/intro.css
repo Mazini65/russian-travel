@@ -1,18 +1,12 @@
 .intro {
   display: flex;
   flex-direction: column;
-}
-
-@media screen and (max-width: 1920px) {
-  .intro {
-    max-width: 690px;
-    margin-left: 148px;
-  }
+  max-width: 690px;
+  margin-left: 148px;
 }
 
 @media screen and (max-width: 1279px) {
   .intro {
-    max-width: 690px;
     margin-left: 48px;
   }
 }
@@ -27,6 +21,5 @@
 @media screen and (max-width: 767px) {
   .intro {
     max-width: 288px;
-    margin: 0 auto;
   }
 }
