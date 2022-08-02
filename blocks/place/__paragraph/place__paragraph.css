@@ -34,6 +34,6 @@
     max-width: 288px;
     grid-row: 4/5;
     grid-column: 1/2;
-    margin: 0 auto;
+    margin: 25px auto 0;
   }
 }
